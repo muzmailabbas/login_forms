@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Border in Text HTML CSS | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>NexTash</h2>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+}
+h2 {    
+    color: black;
+    font-size: 230px;
+    -webkit-text-stroke: 3px rgb(255, 0, 0);
+    animation: textShadow 5s infinite;
+}
+    
+/* add animation keyframes */
+@keyframes textShadow {
+    0% {
+        text-shadow: 0px 15px 15px rgba(255, 0, 0, 1);
+    }
+    50% {
+        text-shadow: 0px 15px 15px rgba(255, 0, 0, 0);
+    }
+    100% {
+        text-shadow: 0px 15px 15px rgba(255, 0, 0, 1);
+    }
+}
+    </style>
+</body>
+</html>
